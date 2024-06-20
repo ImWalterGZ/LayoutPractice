@@ -162,3 +162,43 @@ height: auto;
     height: 18%;
     background-color: gray;
   }
+
+
+  .profileDesc{
+    margin-top: 10vh;
+    margin-left: 25%;
+    display: block;
+    border: solid 1px;
+    border-color: aliceblue;
+    width: 50%;
+    height: 200px;
+    padding: 45px;
+  }
+
+  .biotext{
+    width: 75%;
+    font-size: 13pt;
+  }
+
+  .imgperfil{
+    height: 100%;
+    float: right;
+  }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0% 5% 0% 5%;
+    background-color: rgb(26, 25, 25);
+  }
+
+  .footerelement{
+    display: inline-block;
+    justify-content: space-evenly;
+    font-weight: 500;
+    font-size: 13pt;
+  }
