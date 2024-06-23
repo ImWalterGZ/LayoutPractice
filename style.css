@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .icon-list{
     display: flex;
@@ -83,11 +84,11 @@ body{
   
 }
 .quote{
+  font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    width: 50%;
-    height: 30px;
-    margin-left:25%;
-    font-size: larger;
+    width: 60%;
+    margin-left:20%;
+    font-size: 50pt;
 
 }
 .positionright{
@@ -112,8 +113,9 @@ height: auto;
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    gap: 15px;
     width: 80%;
     margin-bottom: 50px;
     
@@ -134,27 +136,28 @@ height: auto;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   }
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-gap: 15px; /* Space between images */
-    width: 80%;
-    margin: 0 auto; /* Center the gallery */
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
   }
   
-  .gallery-item {
-    overflow: hidden;
-    border-radius: 10px;
+  .gallery img {
+    flex: 1 1 200px;
+    object-fit:cover;
+    object-position: top;
+    height: 250px;
+    width:  auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:hover img {
+  .gallery img:hover {
     transform: scale(1.1); 
+    box-shadow: 0 5px 100px 2px rgb(85, 81, 57);
+
   }
 
   .rectangle{
